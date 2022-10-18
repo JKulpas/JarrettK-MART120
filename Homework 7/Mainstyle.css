@@ -1,0 +1,19 @@
+
+span.page2Color {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+span.violetColor{
+    color: blueviolet;
+    background-color: black;
+}
+#certaincolor {
+    color: green;
+    background-color: black;
+}
+#certainstyle {
+    color: aqua;
+    background-color: black;
+}
+
+body{background-image:url(Images/background.jpg);}
