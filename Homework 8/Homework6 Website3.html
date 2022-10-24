@@ -45,6 +45,10 @@
                     document.getElementById("emailNameMessage").style.color = "white";
 
                  }
+            }
+            
+            function getInformation()
+            {
                 var yesButton = document.getElementById.checked("yes").value;
                 var noButton = document.getElementById("no").value;
                 if(document.getElementById("yes").checked == false)
@@ -66,7 +70,7 @@
             Acccept Terms of Agreement 
             <input type="radio" name="yesorno" id="yes">Yes 
             <input  type="radio" name="yesorno" id="no">No <br>
-            <button id="submit" class="btn btn-primary" onclick='checkboxes();'>Submit</button><br>
+            <button id="submit" class="btn btn-primary" onclick="checkboxes(); getInformation();">Submit</button><br>
         
         <a href="Homework6 Website.html">Home Page</a><br>
         <a href="Homework6 Website2.html">A Short Story</a>
