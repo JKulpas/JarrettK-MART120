@@ -1,0 +1,74 @@
+<html>
+    <title>Contact Us</title>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"  crossorigin="anonymous">
+        <script>
+            function checkboxes()
+            {
+            var firstName = document.getElementById("fName").value;
+                if(firstName == "")
+                 {
+                    document.getElementById("fName").focus();
+                    document.getElementById("fName").style.backgroundColor = "red";
+                    document.getElementById("fNameMessage").innerHTML = "* Required";
+                    document.getElementById("fNameMessage").style.color = "red";
+                 }
+                 else{
+                    document.getElementById("fName").style.backgroundColor = "white";
+                    document.getElementById("fNameMessage").style.color = "white";
+
+                 }
+                var lastName = document.getElementById("lName").value;
+                 if(lastName == "")
+                 {
+                    document.getElementById("lName").focus();
+                    document.getElementById("lName").style.backgroundColor = "red";
+                    document.getElementById("lNameMessage").innerHTML = "* Required";
+                    document.getElementById("lNameMessage").style.color = "red";
+                 }
+                 else{
+                    document.getElementById("lName").style.backgroundColor = "white";
+                    document.getElementById("lNameMessage").style.color = "white";
+
+                 }
+                var emailName;
+                emailName = document.getElementById("email").value;
+                 if(emailName == "")
+                 {
+                    document.getElementById("email").focus();
+                    document.getElementById("email").style.backgroundColor = "red";
+                    document.getElementById("emailNameMessage").innerHTML = "* Required";
+                    document.getElementById("emailNameMessage").style.color = "red";
+                 }
+                 else{
+                    document.getElementById("email").style.backgroundColor = "white";
+                    document.getElementById("emailNameMessage").style.color = "white";
+
+                 }
+                var yesButton = document.getElementById.checked("yes").value;
+                var noButton = document.getElementById("no").value;
+                if(document.getElementById("yes").checked == false)
+                {
+                    alert("Terms of Agreement are Required");
+                }
+                if(document.getElementById("no").checked == true)
+                {
+                    alert("Terms of Agreement are Required");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Contact Us!</h1>
+            First Name: <input type="text"id="fName"><span id="fNameMessage"></span><br>
+            Last Name: <input type="text" id="lName"><span id="lNameMessage"></span><br>
+            Email: <input type="text" id="email"><span id="emailNameMessage"></span><br> 
+            Acccept Terms of Agreement 
+            <input type="radio" name="yesorno" id="yes">Yes 
+            <input  type="radio" name="yesorno" id="no">No <br>
+            <button id="submit" class="btn btn-primary" onclick='checkboxes();'>Submit</button><br>
+        
+        <a href="Homework6 Website.html">Home Page</a><br>
+        <a href="Homework6 Website2.html">A Short Story</a>
+    </body>
+</html>
