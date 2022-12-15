@@ -1,4 +1,3 @@
-
 var Xs = [];
 var Ys = [];
 var diameters = [];
@@ -16,12 +15,12 @@ function setup() {
   Xs[1] = 50;
   Ys[1] = 50;
   diameters[1] = 25;
-  for (var i = 0; i < 60; i++) {
+  for (var i = 0; i < 80; i++) {
         xSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 3)) + 1);
         ySpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 3)) + 1);
         Xs[i] = getRandomNumber(400);
         Ys[i] = getRandomNumber(600);
-        diameters[i] = getRandomNumber(15);
+        diameters[i] = getRandomNumber(8);
     }
 }
 
@@ -31,6 +30,7 @@ treeCreation();
 treeStar();
 treeLights();
 treePresents();
+  
    textSize(30);
   fill(255,255,255)
   text('Merry Christmas',95,50)
@@ -61,6 +61,7 @@ treePresents();
   }
 }
 
+
 function treeStar()
 {
   fill(255,255,0)
@@ -81,6 +82,7 @@ function treeLights()
   line(140,200,165,205)
   line(165,205,235,205)
   line(235,205,260,200)
+  fill(Xs,Ys,Xs)
   triangle(150,203,160,205,150,215)
   triangle(180,205,185,218,190,205)
   triangle(220,205,215,218,210,205)
@@ -88,6 +90,7 @@ function treeLights()
   line(133,250,165,255)
   line(165,255,235,255)
   line(235,255,267,250)
+  fill(Ys,Xs,diameters)
   triangle(143,252,153,253,143,265)
   triangle(170,255,172,270,180,255)
   triangle(195,255,200,270,205,255)
@@ -96,6 +99,7 @@ function treeLights()
   line(125,300,160,305)
   line(160,305,240,305)
   line(240,305,275,300)
+  fill(Xs,Ys,Xs)
   triangle(135,302,140,318,145,304)
   triangle(160,305,165,320,170,305)
   triangle(183,305,188,320,193,305)
